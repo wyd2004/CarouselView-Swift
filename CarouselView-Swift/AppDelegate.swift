@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CarouselView
+//  CarouselView-Swift
 //
-//  Created by 王一丁 on 2020/4/18.
+//  Created by 王一丁 on 2020/4/25.
 //  Copyright © 2020 yidingw. All rights reserved.
 //
 

@@ -7,14 +7,13 @@
 //
 
 import UIKit
+import SwiftUI
 
-class ViewController: UIViewController, CarouselViewDataSource {
-    
+final class ViewController: UIViewController, CarouselViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        let carouselView = CarouselView.init(frame: self.view.bounds)
+        let carouselView = CarouselView.init(frame: self.view.frame)
         carouselView.registerClass(viewClass: CarouselViewCellTester.self)
         carouselView.rowWidth = 300
         carouselView.backgroundColor = .white
@@ -41,7 +40,7 @@ class ViewController: UIViewController, CarouselViewDataSource {
         }
         return nil
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -51,5 +50,22 @@ class ViewController: UIViewController, CarouselViewDataSource {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+
+struct ViewControllerPreview: UIViewControllerRepresentable  {
+    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+        
+    }
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ViewControllerPreview>) -> ViewController {
+          return ViewController()
+    }
+    
+}
+
+struct ViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        ViewControllerPreview()
+    }
 }

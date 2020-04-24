@@ -1,14 +1,14 @@
 //
-//  CarouselViewUITests.swift
-//  CarouselViewUITests
+//  CarouselView_SwiftUITests.swift
+//  CarouselView-SwiftUITests
 //
-//  Created by 王一丁 on 2020/4/18.
+//  Created by 王一丁 on 2020/4/25.
 //  Copyright © 2020 yidingw. All rights reserved.
 //
 
 import XCTest
 
-class CarouselViewUITests: XCTestCase {
+class CarouselView_SwiftUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
